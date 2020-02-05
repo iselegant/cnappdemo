@@ -35,7 +35,7 @@ func NewSQLHandler() *SQLHandler {
 	conn, err := gorm.Open(DBMS, CONNECT)
 
 	if err != nil {
-		panic(err.Error())
+    // panic(err.Error())
 	}
 	sqlHandler := new(SQLHandler)
 	sqlHandler.Conn = conn
